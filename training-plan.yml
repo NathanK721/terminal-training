@@ -1,0 +1,50 @@
+# training-plan.yml
+
+plan:
+  title: "Terminal Automation Training"
+  version: 1.0
+  days:
+    - day: 1
+      topic: "Shell Script Fundamentals"
+      objectives:
+        - "Understand variable assignment and quoting"
+        - "Write basic loops and conditionals"
+      deliverables:
+        - "hello_world.sh with inline comments"
+      status: "Not started"
+
+    - day: 2
+      topic: "Logging & Error Handling"
+      objectives:
+        - "Use set -e, set-u for strict mode"
+        - "Implement traps for cleanup and failures"
+      deliverables:
+        - "sample script with timestamped log output and trap handlers"
+      status: "Not started"
+
+    - day: 3
+      topic: "Modularization & Functions"
+      objectives:
+        - "Create reusable functions with parameters"
+        - "Organize code into include files"
+      deliverables:
+        - "library.sh with two utility functions and usage examples"
+      status: "Not started"
+
+    - day: 4
+      topic: "Scheduling & Automation"
+      objectives:
+        - "Compare cron vs launchd for macOS"
+        - "Write idempotent scripts for recurring execution"
+      deliverables:
+        - "cron job definition or launchd plist with log rotation"
+      status: "Not started"
+
+    - day: 5
+      topic: "Notifications & Reporting"
+      objectives:
+        - "Send email/SMS alerts from shell scripts"
+        - "Generate colored, summary reports"
+      deliverables:
+        - "automated report script that emails daily summary"
+      status: "Not started"
