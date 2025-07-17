@@ -11,7 +11,7 @@ plan:
         - "Write basic loops and conditionals"
       deliverables:
         - "hello_world.sh with inline comments"
-      status: "Not started"
+      status: "In progress"
 
     - day: 2
       topic: "Logging & Error Handling"
