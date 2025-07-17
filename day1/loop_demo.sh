@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
+set -euo pipefail
+IFS=$'\n\t'
 
-items=(file1.txt file2.txt file3.txt) # Replace with your list, e.g., (1 2 3) or ("a" "b" "c")
-
-if [ ${#items[@]} -eq 0 ]; then
-    echo "The list is empty."
-else
-    for i in "${!items[@]}"; do
-        idx=$((i + 1))
-        echo "$idx: ${items[$i]}"
-    done
+if [[ $# -eq 0 ]]; then
+  echo "Usage: $0 item1 [item2 ...]" >&2
+  exit 1
 fi
+
+for index in "${!@}"; do
+  printf '%d: %s\n' "$((index+1))" "${!index}"
+done
